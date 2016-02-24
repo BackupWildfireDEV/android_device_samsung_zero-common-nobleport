@@ -210,7 +210,8 @@ PRODUCT_PACKAGES += \
 ###########################################################
 
 PRODUCT_PACKAGES += \
-    libshammy
+    libshammy \
+    libshammy_32
 
 ###########################################################
 ### DEFAULT PROPS
