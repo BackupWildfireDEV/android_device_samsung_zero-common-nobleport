@@ -255,10 +255,13 @@ lib/libtlc_tz_keystore.so
 lib64/libtlc_tz_keystore.so
 
 # Widevine
+lib/liboemcrypto.so
+lib/drm/libdrmwvmplugin.so
+vendor/lib/mediadrm/libdrmclearkeyplugin.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
-vendor/lib/libWVStreamControlAPI_L1.so
-vendor/lib/mediadrm/libwvdrmengine.so
 
 # Wifi
 etc/wifi/bcmdhd_apsta.bin
