@@ -120,14 +120,16 @@ vendor/firmware/bcm4358A3_V0064.0105.hcd
 vendor/firmware/bcm4358A3_V0064.0105_wisol.hcd
 
 # Camera
-#lib/hw/camera.exynos5.so
-#lib64/hw/camera.exynos5.so
+lib/hw/camera.exynos5.so
+lib64/hw/camera.exynos5.so
 #lib/hw/camera.universal7420.so
 #lib64/hw/camera.universal7420.so
 lib/libexynoscamera3.so
 lib64/libexynoscamera3.so
 lib/libexynoscamera.so
 lib64/libexynoscamera.so
+lib/libhwjpeg.so
+lib64/libhwjpeg.so
 lib/libexynosv4l2.so
 lib64/libexynosv4l2.so
 lib/libsensorlistener.so
