@@ -1,5 +1,6 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The Dokdo Project
+# Copyright (C) 2015 The Android Open Kang Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +17,10 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter treltexx trhpltexx, $(TARGET_DEVICE)),)
+ifeq ($(BOARD_VENDOR),samsung)
+ifneq ($(filter zerofltedv zerofltemtr zerofltespr zerofltetmo zerofltexx zeroltetmo zeroltexx,$(TARGET_DEVICE)),)
 
-$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/net/wireless/bcmdhd4358)
-$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/sensorhub/brcm/factory)
-$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/media/platform/exynos/fimc-is/sensor)
-$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/security/tima_uevent)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
+endif
 endif
