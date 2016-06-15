@@ -8,6 +8,8 @@ LOCAL_PATH := device/samsung/zero-common
 
 PRODUCT_PACKAGES += \
     fstab.samsungexynos7420 \
+    init.carrier.rc \
+    init.gps.rc \
     init.power.rc \
     init.samsung.rc \
     init.wifi.rc \
